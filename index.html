@@ -1,21 +1,27 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="electricidad.ico"></link>
+    <link rel="icon" href="img/icono.ico" type="">
+    <link rel="stylesheet" href="css/stilos.css">
     <title>Inicio</title>
 </head>
+
 <body>
 
     <!-- El encabezado de la pagina-->
 
     <header>
-        <nav>
-            <a href="index.html">
-            <img src="img/logo.png" alt="logo" widht="250" height="50">
-            </a>
+        <nav class="contenedor-flex-1">
+            <div>
+                <!-- <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsBetf88tl7mo0EoVO2BaTPD1Etwy5I0peJA&usqp=CAU"
+                    alt="logo" title="logo" widht="250" height="50"> -->
+                <img src="img/logo.ico" alt="logo" title="logo" width="80px">
+                <p id="texto">Soluciones Electricas</p>
+            </div>
             <ul>
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="nosotros.html">Nosotros</a></li>
@@ -24,60 +30,65 @@
         </nav>
     </header>
 
-     <!-- Banner-->
-    <section>
-        <div>
+    <!-- Banner-->
+    <section id="banner">
+        <div class="ancho-contenido-banner">
             <h1>Somos Expertos en Soluciones Electricas</h1>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus, aspernatur exercitationem. 
-                Eligendi suscipit voluptatibus nisi perferendis labore consectetur laboriosam culpa molestias, unde ut commodi sit velit aperiam nulla quod libero.
+            <p>Porque nos apasiona lo que hacemos desde hace mas de 5 años nos hemos convertido en una de las empresas
+                de producto/servicios de Electricidad residencial, comercial e industrial con mayor alcance a nivel
+                nacional y latinoamericano.
             </p>
         </div>
     </section>
 
-     <!-- Asesoria tecnica-->
-    <section>
+    <!-- Asesoria tecnica-->
+    <section class="asesoria">
         <span>¿Quieres recibir asesoria tecnica ahora mismo?</span>
         <a href="contacto.html">Contactanos</a>
     </section>
 
-     <!-- Servicios-->
-     <section>
+    <!-- Servicios-->
+    <section class="contenedor-flex-2">
         <div>
-            <img src="img/electricidad.jpg" alt="icono productos">
-            <h2>Productos</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                Officiis iste quae repellat cumque ullam, veniam nesciunt voluptas sint non sit.
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyDMmwrUX_lX9cewaWKbZDjxzdnhPyjT17ww&usqp=CAU"
+                title="icono productos y servicios">
+            <h2>Productos y Servicios</h2>
+            <p>Contamos con un personal altamente experimentado en instalaciones de energia y comunicaciones para
+                oficinas e industrias, como asi tambien en proyectos residenciales.
+                Nuestros servicios abarcan desde el asesoramiento de proyectos iniciales hasta su ejecucion y puesta en
+                marcha final.
             </p>
         </div>
 
         <div>
-            <img src="img/electricidad.jpg" alt="icono personas">
-            <h2>Experiencias con clientes</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                Officiis iste quae repellat cumque ullam, veniam nesciunt voluptas sint non sit.
+            <img src="data:image/jpeg;base64,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"
+                title="icono clientes">
+            <h2>Nuestros clientes</h2>
+            <p>Mas de 10 años de experiencia nos avalan. Y nuestra cartera de clientes no es la excepcion, solo por
+                nombrar a algunos de los mas recientes hemos tenido el gusto de trabajar con expresas como; Google,
+                Facebook, Netflix, Mercado Libre, etc.
+
             </p>
         </div>
 
         <div>
-            <img src="img/electricidad.jpg" alt="icono tienda">
-            <h2>Tienda virtual</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                Officiis iste quae repellat cumque ullam, veniam nesciunt voluptas sint non sit.
+            <img src="img/carrito1.png" title="icono carrito" height="200px">
+            <h2>Gestion de insumos para tus proyectos</h2>
+            <p>Nos encargamos de brindarte las mejores soluciones adaptadas a tus proyectos, es por eso, que tambien
+                entre nuestros servicios te ofrecemos la gestion de insumos para los mismos con los mejores proveedores
+                del pais.
             </p>
         </div>
 
 
 
-     </section>
+    </section>
 
     <!-- El pie de la pagina-->
     <footer>
         <div>Soluciones Electricas &copy;Todos los derechos reservados 2022</div>
-        <ul>
-            <li><a href="https://web.facebook.com/ElectricidadDomiciliaria0K">Facebook</a></li>
-            <li><a href="https://www.instagram.com/electricistas_ok/">Instagram</a></li>
-        </ul>
     </footer>
 
 </body>
+
 </html>
