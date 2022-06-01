@@ -4,15 +4,10 @@ html{
     box-sizing: border-box;
     font-size:62.5%;
 }
-/* 
-*, *::before, *: :after{
-    box-sizing: inherit;
-} */
+
 
 body{ 
-	background-image: url("/clase4.GL/img/body.jpg");
-    /* background-repeat: repeat-x; */
-	/* background-repeat: no-repeat; */
+	background-image: url("/clase2022/paginaweb/img/body.jpg");
 	margin: 80px;
     padding:0;
     line-height: 1.6;
@@ -81,15 +76,11 @@ header{
 	text-align:center;
 	font-family:Helvetica, Arial, sans-serif;
 	background: url('../img/banner.jpg');
-	/* background-repeat: no-repeat;
-	background-size: cover;
-	background-attachment: fixed; */
  } 
 
 #banner h1{
 	font-size: 4.5em;
 	color: white;
-	/* cambie el grosor de la letra */
 	font-weight: 600;
 	margin-top:0;
 	margin-bottom: 10px;
@@ -181,7 +172,6 @@ footer{
 	--facebook: rgb(84, 84, 214);
 	--instagram: rgb(228, 55, 78);
 	--github: rgb(118, 118, 119);
-	--github: rgb(118, 118, 119);
 }
 
 .redes-sociales {
@@ -210,7 +200,6 @@ footer{
 
 .redes-sociales a{
 	display: block;
-	/* padding: 0 10px; */
 	background: rgb(255, 255, 255);
 	color: rgb(0, 0, 0);
 	line-height: 50px;
@@ -271,7 +260,6 @@ footer{
 }
 
 .seccion-nosotros-2 span{
-	/* color: #fff; */
 	Background: #fff;
 	border: 5px solid #000;
 	font-size: 30px;
@@ -288,7 +276,6 @@ footer{
 	display: grid;
 	grid-gap: 1em;
 	grid-template-rows: auto;
-	/* grid-template-columns: 60% 40%; */
 	grid-template-areas: 
 	"valores equipo"
 	"mision equipo"
@@ -301,6 +288,7 @@ footer{
 
 .valores li{
 	font-size: 1.6em;
+	list-style: none;
 }
 
 .mision{
@@ -310,13 +298,6 @@ footer{
 .vision{
 	grid-area: vision;
 }
-
-/* .equipo{
-	grid-area: equipo;
-	margin-bottom: 10px;
-	margin-top:10px;
-	/* background: url('../img/equipo.jpg'); */
-	/* background-repeat: no-repeat; */
 
 .grid p{
 	padding:10px;
@@ -355,15 +336,16 @@ footer{
 	text-align:center;
 }
 
-.formulario{
+#formulario{
 	text-align:center;
 }
 
-.formulario > div{
+#formulario > div{
 	padding-bottom:20px;
+	
 }
 
-.formulario input, textarea{
+#formulario input, textarea{
 	font-size:1.5em;
 	width:80%;
 	font-family: Helvetica, Arial, sans-serif;
@@ -382,7 +364,6 @@ footer{
 }
 
 .espacio-seccion{
-	/* background: #fff; */
 	min-height:75vh;
 	margin-bottom: 7%;
 }
@@ -430,13 +411,6 @@ footer{
   .icon-github-square:before {
 	content: "\f092";
   }
-  .icon-instagram1:before {
-	content: "\f16d";
-  }
-  .icon-python:before {
-	content: "\e901";
-	color: #3776ab;
-  }
 
 /*Media Queries*/
 
@@ -453,19 +427,18 @@ footer{
 	}
 
 	.redes-sociales ul li{
+		display: grid;
+		justify-content: center;
 		display: inline-block;
-		margin: 0 45px;
-		width: 50px;
-		height: 50px;
-		text-align: center;
-		font-size: 35px;
-		position: relative;
-		left: 450px;
+		align-items: center;
+		/* margin: 0 45px; */
+		/* width: 50px; */
+		/* height: 50px; */
+		/* text-align: center; */
+		/* font-size: 35px; */
+		/* position: relative; */
+		/* left: 450px; */
 	}
-
-    /* .equipo{
-		display:none;
-	} */
 
     .grid{
         display: grid;
