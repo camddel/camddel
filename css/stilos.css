@@ -7,7 +7,7 @@ html{
 
 
 body{ 
-	background-image: url("/clase2022/paginaweb/img/body.jpg");
+	background-image: url("/img/body.jpg");
 	margin: 80px;
     padding:0;
     line-height: 1.6;
@@ -351,7 +351,7 @@ footer{
 	font-family: Helvetica, Arial, sans-serif;
 }
 
-.boton{
+#button{
 	color:white;
 	background-color: #000;
 	border:none;

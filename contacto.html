@@ -36,24 +36,30 @@
             <h3>RECIBA ASESORIA TECNICA AHORA MISMO</h3>
             <form action="" method="" id="formulario">
                 <div>
-                    <input type="text" id="nombre" name="nombre" class="formulario-input" placeholder=" Nombre Completo">
+                    <label for="name"></label>
+                    <input type="text" id="name" name="name" class="formulario-input" placeholder=" Nombre Completo">
                 </div>
                 <div>
+                    <label for="email"></label>
                     <input type="text" id="email" name="email" class="formulario-input" placeholder=" Correo Electronico">
                 </div>
                 <div>
-                    <input type="text" id="telefono" name="telefono" class="formulario-input" placeholder=" ¿A donde llamamos?">
+                    <label for="telephone"></label>
+                    <input type="text" id="telephone" name="telephone" class="formulario-input" placeholder=" ¿A donde llamamos?">
                 </div>
                 <div>
-                    <textarea rows="5" class="formulario-input" placeholder=" Escribe tu mensaje aqui"></textarea>
+                    <label for="message"></label>
+                    <textarea rows="5" id="message" class="formulario-input" placeholder=" Escribe tu mensaje aqui"></textarea>
                 </div>
                 <div>
-                    <button class="boton"  type="submit">Enviar</button>
+                    <label for="button"></label>
+                </div>
+                <div>
+                    <button type="submit" id="button">Enviar</button>
                 </div>
             </form>
         </div>
     </section>
-    <script src="index.js"></script>
 
     <!-- El pie de la pagina-->
     <footer>
@@ -68,7 +74,48 @@
             </ul>
         </div>
     </footer>
+    <script src="scripts/contacto.js"></script>
 
 
 </body>
 </html>
+
+
+<!-- window.addEventListener('DOMContentLoaded', () => {
+    console.log('la pagina esta cargada')
+});
+
+let main = function () {
+    submitButton();
+}
+
+let submitButton = function () {
+    document.querySelector("#button input").setAttribute("onclick", "dataRead()");
+}
+
+let dataRead = function () {
+    console.log("Intentamos leer los datos del formulario");
+    console.log(
+        document.querySelector("#name").value,
+        document.querySelector("#email").value,
+        document.querySelector("#telephone").value,
+        document.querySelector("#message").value,
+    );
+    let myObject = {
+        // clave : valor
+        name:  document.querySelector("#name").value,
+        email: document.querySelector("#email").value,
+        telephone: document.querySelector("#telephone").value,
+        message: document.querySelector("#message").value,
+
+    };
+    console.log(myObject);
+    // JSON necesita pasar el objeto a string
+    console.log(JSON.stringify(myObject));//sirvio para ver que hace el stringify
+    // Guardar los datos en localStorage (persitencia de datos)
+    save_localStorage(dataRead);
+}
+
+let save_localStorage = function (dataRead) {
+    localStorage.setItem("info", JSON.stringify(dataRead));
+} -->
